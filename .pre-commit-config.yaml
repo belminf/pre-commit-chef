@@ -3,7 +3,6 @@ repos:
   - repo: https://github.com/jumanjihouse/pre-commit-hooks
     rev: 1.11.0
     hooks:
-      - id: reek
       - id: rubocop
       - id: markdownlint
 
