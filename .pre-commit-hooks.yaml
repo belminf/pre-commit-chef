@@ -1,0 +1,29 @@
+---
+- id: cookstyle
+  name: Chef-specific Rubocop linting with Cookstyle
+  entry: run_cookstyle
+  language: ruby
+  pass_filenames: true
+  types:
+    - ruby
+  files: .*
+  args:
+    - -a
+    - -D
+    - -S
+  require_serial: true
+
+- id: foodcritic
+  name: Chef cookbook linting with Foodcritic
+  entry: run_foodcritic
+  language: ruby
+  pass_filenames: true
+  types:
+    - file
+  files: >
+    (?x)^(
+        (.*/)?(recipes|attributes|resources|providers)/.*\.rb|
+        (.*/)?metadata\.rb
+    )$
+  exclude: .*/test/.*\.rb$
+  require_serial: true
