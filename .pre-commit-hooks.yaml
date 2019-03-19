@@ -1,7 +1,7 @@
 ---
 - id: cookstyle
   name: Chef-specific Rubocop linting with Cookstyle
-  entry: run_cookstyle
+  entry: run_cookstyle.rb
   language: ruby
   pass_filenames: true
   types:
@@ -15,7 +15,7 @@
 
 - id: foodcritic
   name: Chef cookbook linting with Foodcritic
-  entry: run_foodcritic
+  entry: run_foodcritic.rb
   language: ruby
   pass_filenames: true
   types:
