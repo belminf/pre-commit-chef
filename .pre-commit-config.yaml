@@ -1,5 +1,10 @@
 ---
 repos:
+  - repo: https://github.com/pre-commit/pre-commit
+    rev: v1.14.4
+    hooks:
+      - id: validate_manifest
+
   - repo: https://github.com/jumanjihouse/pre-commit-hooks
     rev: 1.11.0
     hooks:
