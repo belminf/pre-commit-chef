@@ -1,3 +1,4 @@
+---
 - id: cookstyle
   name: Chef-specific Rubocop linting with Cookstyle
   entry: run_cookstyle
