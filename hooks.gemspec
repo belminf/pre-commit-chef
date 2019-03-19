@@ -8,6 +8,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'cookstyle', '~> 3.0'
   s.add_runtime_dependency 'foodcritic', '~> 15.1'
   s.bindir = 'hooks'
-  s.executables << 'run_cookstyle'
-  s.executables << 'run_foodcritic'
+  s.executables << 'run_cookstyle.rb'
+  s.executables << 'run_foodcritic.rb'
 end
