@@ -19,7 +19,7 @@
   language: ruby
   pass_filenames: true
   types:
-    - file
+    - ruby
   files: >
     (?x)^(
         (.*/)?(recipes|attributes|resources|providers)/.*\.rb|
